@@ -1,0 +1,211 @@
+:root {
+  --negro: #0d0d0d;
+  --carbon: #161616;
+  --dorado: #c9a227;
+  --dorado-claro: #e6c766;
+  --crema: #f5f1e8;
+  --gris: #9a9a9a;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--negro);
+  color: var(--crema);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+h1, h2, h3, .logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* NAVEGACIÓN */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+  background: rgba(13, 13, 13, 0.95);
+  border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo { font-size: 1.6rem; letter-spacing: 3px; }
+.logo span { color: var(--dorado); }
+
+.nav nav a {
+  color: var(--crema);
+  text-decoration: none;
+  margin-left: 32px;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav nav a:hover { color: var(--dorado-claro); }
+
+/* INICIO */
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+  background:
+    linear-gradient(rgba(13,13,13,0.75), rgba(13,13,13,0.9)),
+    radial-gradient(circle at 70% 30%, #2a2a2a, #0d0d0d 70%);
+}
+
+.hero-texto { max-width: 620px; }
+
+.eyebrow {
+  color: var(--dorado);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.75rem;
+  margin-bottom: 16px;
+}
+
+.eyebrow.centrado { text-align: center; }
+
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.subtitulo {
+  color: var(--gris);
+  margin-bottom: 36px;
+  max-width: 480px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 14px 40px;
+  border: 1px solid var(--dorado);
+  color: var(--dorado);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+}
+
+.boton:hover {
+  background: var(--dorado);
+  color: var(--negro);
+}
+
+/* SECCIONES */
+.seccion { padding: 100px 8%; }
+.seccion.oscura { background: var(--carbon); }
+
+.titulo {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 60px;
+}
+
+/* SERVICIOS */
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.tarjeta {
+  background: var(--carbon);
+  border: 1px solid rgba(201, 162, 39, 0.25);
+  padding: 36px 28px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-6px);
+  border-color: var(--dorado);
+}
+
+.tarjeta h3 {
+  font-size: 1.5rem;
+  color: var(--dorado-claro);
+  margin-bottom: 14px;
+}
+
+.tarjeta p { color: var(--gris); font-size: 0.92rem; }
+
+.precio {
+  margin-top: 18px;
+  color: var(--dorado) !important;
+  letter-spacing: 1px;
+  font-size: 0.85rem !important;
+}
+
+/* EQUIPO */
+.grid-equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+}
+
+.persona {
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid rgba(201, 162, 39, 0.4);
+}
+
+.persona h3 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.puesto {
+  color: var(--dorado);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  margin-bottom: 12px;
+}
+
+.datos { color: var(--gris); font-size: 0.85rem; }
+
+/* CONTACTO */
+.contacto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contacto-grid h3 {
+  color: var(--dorado-claro);
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+
+.contacto-grid p { color: var(--gris); font-size: 0.92rem; }
+
+/* PIE */
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid rgba(201, 162, 39, 0.2);
+  color: var(--gris);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+/* MÓVIL */
+@media (max-width: 700px) {
+  .nav { flex-direction: column; gap: 14px; }
+  .nav nav a { margin: 0 10px; }
+  .seccion { padding: 70px 6%; }
+}
