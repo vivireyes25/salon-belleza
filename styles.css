@@ -209,3 +209,109 @@ footer {
   .nav nav a { margin: 0 10px; }
   .seccion { padding: 70px 6%; }
 }
+
+/* ===== GRUPOS DE SERVICIOS ===== */
+.service-group {
+  margin-bottom: 3.5rem;
+}
+
+.service-group__title {
+  color: #c9a227;
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid rgba(201, 162, 39, .4);
+}
+
+.service-group__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: #1c1c1c;
+  border: 1px solid #c9a227;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(201, 162, 39, .25);
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.service-card__body {
+  padding: 1.2rem;
+}
+
+.service-card__body h4 {
+  color: #c9a227;
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
+}
+
+.service-card__body p {
+  color: #ddd;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+.service-card__price {
+  color: #c9a227 !important;
+  font-weight: bold;
+  margin-top: .7rem;
+}
+
+/* ===== PROMOCIONES ===== */
+.promos {
+  padding: 4rem 0;
+}
+
+.promos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.promo-card {
+  background: #1c1c1c;
+  border: 1px solid #c9a227;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.promo-card h3 {
+  color: #c9a227;
+  font-size: 1.15rem;
+  margin-bottom: .6rem;
+}
+
+.promo-card p {
+  color: #ddd;
+  font-size: .92rem;
+  line-height: 1.5;
+}
+
+.promo-card__vigencia {
+  color: #c9a227 !important;
+  font-size: .82rem !important;
+  margin-top: .8rem;
+  font-style: italic;
+}
+
+.promos__nota {
+  margin-top: 2rem;
+  text-align: center;
+  color: #c9a227;
+  font-size: .9rem;
+  font-style: italic;
+}
