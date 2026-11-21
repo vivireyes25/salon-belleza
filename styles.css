@@ -395,8 +395,9 @@ footer {
 }
 
 .mapa {
-  width: 100%;
-  margin-top: 40px;
+  width: 90%;               /* Deja un margen a los lados en celulares */
+  max-width: 600px;         /* Este es el ancho máximo de tu cuadrito */
+  margin: 40px auto;        /* Centra el cuadrito en medio de la pantalla */
   text-align: center;
 }
 
@@ -407,8 +408,9 @@ footer {
 }
 
 .mapa iframe {
-  width: 100%;
-  height: 350px;
+  width: 100%;              /* Llena los 600px del cuadrito, ya no toda la pantalla */
+  height: 400px;            /* Altura del cuadrito */
   border: 0;
   border-radius: 15px;
+  display: block;
 }
