@@ -10,15 +10,18 @@
 <body>
 
   <!-- NAVEGACIÓN -->
-  <header class="nav">
-  <div class="logo">Havah Beauty</div>
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#equipo">Equipo</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
+<nav class="nav">
+    
+    <button class="menu-btn" onclick="mostrarMenu()">☰</button>
+
+    <div class="menu" id="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+
+</nav>
 
   <!-- INICIO -->
   <section id="inicio" class="hero">
@@ -192,6 +195,12 @@
   <footer>
     <p>© 2026 havah &amp; beauty · Salón de Belleza</p>
   </footer>
+
+  <script>
+function mostrarMenu() {
+    document.getElementById("menu").classList.toggle("mostrar");
+}
+</script>
 
 </body>
 </html>
