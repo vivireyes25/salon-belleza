@@ -52,14 +52,17 @@ h1, h2, h3, .logo {
 .nav nav a:hover { color: var(--dorado-claro); }
 
 .menu-btn {
-    background: transparent;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    left: auto;
+    background: #111;
     border: 1px solid var(--dorado);
     color: var(--dorado);
-    font-size: 25px;
+    font-size: 24px;
     width: 50px;
     height: 50px;
     cursor: pointer;
-    margin-left: auto;
 }
 
 .menu {
