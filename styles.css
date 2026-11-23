@@ -451,3 +451,58 @@ footer {
   border-radius: 15px;
   display: block;
 }
+
+/* ===== COMENTARIOS ===== */
+.comentarios {
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    background: #111;
+}
+
+.comentarios h2 {
+    color: #d4af37;
+    font-size: 30px;
+}
+
+.comentarios form {
+    max-width: 500px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comentarios input,
+.comentarios select,
+.comentarios textarea {
+    padding: 14px;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+}
+
+.comentarios textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.comentarios button {
+    padding: 14px;
+    background: #d4af37;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.comentario {
+    max-width: 500px;
+    margin: 15px auto;
+    padding: 15px;
+    background: #222;
+    border: 1px solid #d4af37;
+    border-radius: 10px;
+    text-align: left;
+}
