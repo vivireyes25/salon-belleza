@@ -194,6 +194,65 @@
     </div>
   </section>
 
+   <!--Apartado de comentarios-->
+
+<section class="comentarios" id="comentarios">
+    <h2>Opiniones de nuestros clientes</h2>
+    <p>Tu opinión es importante para nosotros</p>
+
+    <form id="formComentarios">
+        <input type="text" id="nombre"
+        placeholder="Tu nombre" required>
+
+        <select id="calificacion" required>
+            <option value="">Selecciona tu calificación</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+        </select>
+
+        <textarea id="opinion"
+        placeholder="Escribe tu comentario..."
+        required></textarea>
+
+        <button type="submit">Enviar comentario</button>
+    </form>
+
+    <div id="listaComentarios"></div>
+</section>
+
+<script>
+document.getElementById("formComentarios")
+.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let nombre = document.getElementById("nombre").value;
+    let estrellas = document.getElementById("calificacion").value;
+    let opinion = document.getElementById("opinion").value;
+
+    let comentario = document.createElement("div");
+    comentario.className = "comentario";
+
+    let titulo = document.createElement("h3");
+    titulo.textContent = nombre;
+
+    let calificacion = document.createElement("p");
+    calificacion.textContent = "⭐".repeat(Number(estrellas));
+
+    let texto = document.createElement("p");
+    texto.textContent = opinion;
+
+    comentario.append(titulo, calificacion, texto);
+
+    document.getElementById("listaComentarios")
+    .prepend(comentario);
+
+    this.reset();
+});
+</script>
+
   <footer>
     <p>© 2026 havah &amp; beauty · Salón de Belleza</p>
   </footer>
