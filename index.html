@@ -265,5 +265,22 @@ function mostrarMenu() {
 }
 </script>
 
+<script>
+let ultimaPosicion = 0;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', function() {
+    let posicionActual = window.scrollY;
+
+    if (posicionActual > ultimaPosicion) {
+        header.classList.add('oculto');
+    } else {
+        header.classList.remove('oculto');
+    }
+
+    ultimaPosicion = posicionActual;
+});
+</script>
+
 </body>
 </html>
