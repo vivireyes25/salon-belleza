@@ -49,13 +49,10 @@ h1, h2, h3, .logo {
   transition: color 0.3s;
 }
 
-.nav nav a:hover { color: var(--dorado-claro); }
-
 .menu-btn {
     position: fixed;
     top: 15px;
     right: 20px;
-    left: auto;
     background: #111;
     border: 1px solid var(--dorado);
     color: var(--dorado);
@@ -63,6 +60,7 @@ h1, h2, h3, .logo {
     width: 50px;
     height: 50px;
     cursor: pointer;
+    z-index: 1001;
 }
 
 .menu {
@@ -79,9 +77,14 @@ h1, h2, h3, .logo {
 
 .menu a {
     display: block;
-    color: white;
+    color: var(--crema);
     text-decoration: none;
     padding: 12px;
+    margin-left: 0;
+}
+
+.menu a:hover {
+    color: var(--dorado-claro);
 }
 
 .menu.mostrar {
