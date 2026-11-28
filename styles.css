@@ -540,7 +540,7 @@ header.oculto {
 
 .cursos-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
   gap: 20px;
 }
 
@@ -549,6 +549,10 @@ header.oculto {
   border: 1px solid var(--dorado);
   padding: 30px 15px;
   transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 385px;
 }
 
 .curso-card:hover {
@@ -583,6 +587,8 @@ header.oculto {
   padding: 12px 20px;
   cursor: pointer;
   font-weight: bold;
+  margin-top: auto;
+  align-self: center;
 }
 
 .curso-card button:hover {
