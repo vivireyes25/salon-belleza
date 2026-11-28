@@ -651,7 +651,7 @@ header.oculto {
   line-height: 2;
 }
 
-.categoria-boton {
+.volver-cursos {
   display: inline-block;
   margin-top: 25px;
   padding: 12px 20px;
@@ -661,6 +661,6 @@ header.oculto {
   font-weight: bold;
 }
 
-.categoria-boton:hover {
+.volver-cursos:hover {
   background: var(--dorado-claro);
-} 
+}
