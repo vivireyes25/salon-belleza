@@ -536,6 +536,8 @@ header.oculto {
   color: var(--gris);
   font-size: 16px;
   margin-bottom: 50px;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .cursos-grid {
