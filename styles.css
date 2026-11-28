@@ -675,3 +675,20 @@ header.oculto {
 .categoria-boton:hover {
   background: var(--carbon) !important;
 }
+
+.curso-boton {
+  display: inline-block;
+  background: var(--dorado);
+  color: var(--negro);
+  border: none;
+  padding: 12px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: auto;
+  align-self: center;
+}
+
+.curso-boton:hover {
+  background: var(--dorado-claro);
+  color: var(--negro);
+}
