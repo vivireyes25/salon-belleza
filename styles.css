@@ -664,3 +664,14 @@ header.oculto {
 .volver-cursos:hover {
   background: var(--dorado-claro);
 }
+
+/* Corrección de las tarjetas de servicios */
+.categoria-boton {
+  background: var(--negro) !important;
+  color: var(--crema);
+  border: 1px solid var(--dorado);
+}
+
+.categoria-boton:hover {
+  background: var(--carbon) !important;
+}
