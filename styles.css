@@ -612,3 +612,55 @@ header.oculto {
     grid-template-columns: 1fr;
   }
 }
+
+.detalle-curso {
+  min-height: 100vh;
+  padding: 100px 10%;
+  background: var(--negro);
+  color: var(--crema);
+  text-align: center;
+}
+
+.detalle-curso h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 50px;
+  color: var(--dorado);
+  margin-bottom: 25px;
+}
+
+.detalle-curso p {
+  color: var(--gris);
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 25px;
+}
+
+.detalle-curso h2 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--dorado-claro);
+  font-size: 32px;
+  margin: 40px 0 20px;
+}
+
+.detalle-curso ul {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  text-align: left;
+  color: var(--gris);
+  line-height: 2;
+}
+
+.categoria-boton {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 20px;
+  background: var(--dorado);
+  color: var(--negro);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.categoria-boton:hover {
+  background: var(--dorado-claro);
+} 
